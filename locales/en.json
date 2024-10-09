@@ -1,0 +1,102 @@
+{
+    "Header": {
+        "title": "Welcome to Our Amazing Product",
+        "description": "Discover how our solution can transform your business and boost your productivity.",
+        "cta": "Get Started"
+    },
+    "Features": {
+        "title": "Our Key Features",
+        "subtitle": "Discover what makes our product stand out from the rest",
+        "feature1": {
+            "title": "Easy Integration",
+            "description": "Seamlessly integrate our solution into your existing workflow"
+        },
+        "feature2": {
+            "title": "Secure & Private",
+            "description": "Your data is protected with state-of-the-art encryption"
+        },
+        "feature3": {
+            "title": "Regular Updates",
+            "description": "We continuously improve and add new features based on your feedback"
+        },
+        "feature4": {
+            "title": "Performance Boost",
+            "description": "Optimize your processes and increase productivity"
+        }
+    },
+    "Blogs": {
+        "title": "Latest from Our Blog",
+        "subtitle": "Stay updated with our latest news and insights",
+        "viewAllButton": "View All Articles",
+        "post1": {
+            "title": "10 Tips for Boosting Productivity",
+            "excerpt": "Learn how to maximize your efficiency with these proven strategies.",
+            "date": "May 15, 2023",
+            "author": {
+                "name": "John Doe"
+            }
+        },
+        "post2": {
+            "title": "The Future of AI in Business",
+            "excerpt": "Discover how artificial intelligence is reshaping the business landscape.",
+            "date": "May 10, 2023",
+            "author": {
+                "name": "Jane Smith"
+            }
+        },
+        "post3": {
+            "title": "Building a Sustainable Workspace",
+            "excerpt": "Explore eco-friendly practices to create a greener office environment.",
+            "date": "May 5, 2023",
+            "author": {
+                "name": "Mike Johnson"
+            }
+        }
+    },
+    "Showcase": {
+        "title": "See Our Product in Action",
+        "subtitle": "Explore the features that make our product stand out",
+        "item1": {
+            "title": "Intuitive Dashboard",
+            "description": "Get a quick overview of all your important metrics at a glance."
+        },
+        "item2": {
+            "title": "Advanced Analytics",
+            "description": "Dive deep into your data with our powerful analytics tools."
+        },
+        "item3": {
+            "title": "Seamless Integration",
+            "description": "Connect with your favorite tools and services effortlessly."
+        }
+    },
+    "FAQ": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Find answers to common questions about our product and services",
+        "q1": "What is [Your Product Name]?",
+        "a1": "Your product description here.",
+        "q2": "How does pricing work?",
+        "a2": "Explain your pricing model here.",
+        "q3": "Is there a free trial available?",
+        "a3": "Information about your free trial, if applicable.",
+        "q4": "How can I get support?",
+        "a4": "Describe your support options here.",
+        "q5": "Can I cancel my subscription at any time?",
+        "a5": "Explain your cancellation policy here."
+    },
+    "Footer": {
+        "companyName": "Your Company Name",
+        "companyDescription": "A brief description of your company and its mission.",
+        "products": "Products",
+        "product1": "Product 1",
+        "product2": "Product 2",
+        "product3": "Product 3",
+        "company": "Company",
+        "about": "About Us",
+        "careers": "Careers",
+        "contact": "Contact",
+        "legal": "Legal",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "allRightsReserved": "All rights reserved."
+    }
+}
