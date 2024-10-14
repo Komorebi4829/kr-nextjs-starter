@@ -18,7 +18,7 @@ export function ThemedButton() {
   }
 
   return (
-    <div onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+    <div onClick={() => setTheme(theme === "light" ? "dark" : "light")} className="cursor-pointer">
       {theme === "light" ? <PhMoonFill /> : <PhSunBold />}
     </div>
   );

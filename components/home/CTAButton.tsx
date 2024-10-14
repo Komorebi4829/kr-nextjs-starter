@@ -5,7 +5,7 @@ import Link from "next/link";
 const CTAButton = ({ locale }: { locale: any }) => {
   return (
     <Link
-      href="https://github.com/weijunext/landing-page-boilerplate"
+      href="https://github.com/komorebi4829/kr-nextjs-starter"
       target="_blank"
       rel="noopener noreferrer nofollow"
     >

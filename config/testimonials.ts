@@ -1,4 +1,3 @@
-
 export const TestimonialsData = [
   {
     user: {
@@ -12,7 +11,7 @@ export const TestimonialsData = [
   {
     user: {
       name: "User1",
-      username: "weijunext",
+      username: "Kent River",
       image: "/images/users/1.png",
     },
     content:
@@ -21,7 +20,7 @@ export const TestimonialsData = [
   {
     user: {
       name: "User2",
-      username: "weijunext",
+      username: "Kent River",
       image: "/images/users/2.png",
     },
     content:
@@ -30,7 +29,7 @@ export const TestimonialsData = [
   {
     user: {
       name: "User3",
-      username: "weijunext",
+      username: "Kent River",
       image: "/images/users/3.png",
     },
     content:
@@ -39,7 +38,7 @@ export const TestimonialsData = [
   {
     user: {
       name: "User4",
-      username: "weijunext",
+      username: "Kent River",
       image: "/images/users/4.png",
     },
     content:
@@ -48,7 +47,7 @@ export const TestimonialsData = [
   {
     user: {
       name: "User5",
-      username: "weijunext",
+      username: "Kent River",
       image: "/images/users/5.png",
     },
     content:
@@ -57,7 +56,7 @@ export const TestimonialsData = [
   {
     user: {
       name: "User6",
-      username: "weijunext",
+      username: "Kent River",
       image: "/images/users/4.png",
     },
     content:
@@ -66,7 +65,7 @@ export const TestimonialsData = [
   {
     user: {
       name: "User7",
-      username: "weijunext",
+      username: "Kent River",
       image: "/images/users/5.png",
     },
     content:
