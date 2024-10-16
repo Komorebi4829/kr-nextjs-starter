@@ -9,6 +9,7 @@ import { useParams } from "next/navigation";
 import { useState } from "react";
 import { CgClose } from "react-icons/cg";
 import { ThemedButton } from "../ThemedButton";
+import useSmoothScroll from "@/hooks/useSmoothScroll";
 
 const links = [
   { label: "Features", href: "#Features" },
@@ -22,8 +23,11 @@ const Header = () => {
   const lang = params.lang;
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useSmoothScroll();
+
   return (
-    <header className="py-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <header className="backdrop-blur py-6 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 sticky top-0 z-50 bg-gray-50">
       <nav className="relative z-50 flex justify-between items-center">
         {/* Left section */}
         <div className="flex items-center md:gap-x-12 flex-1">
@@ -33,28 +37,33 @@ const Header = () => {
             title="Landing Page Boilerplate"
             className="flex items-center space-x-1 font-bold"
           >
-            <Image
+            {/* <Image
               alt="Logo"
               src="/logo.svg"
               className="w-8 h-8"
               width={32}
               height={32}
-            />
-            <span className="text-gray-950 dark:text-gray-300 hidden md:block">
+            /> */}
+            <span className="text-2xl text-gray-950 dark:text-gray-300 hidden md:block">
               {siteConfig.name}
             </span>
           </Link>
         </div>
 
         {/* Center section - Navigation */}
-        <ul className="hidden md:flex items-center justify-center gap-6 flex-1">
+        <ul className="hidden md:flex items-center justify-center gap-6 flex-1 px-3 rounded-full ring-1 ring-gray-200">
           {links.map((link) => (
-            <li key={link.label}>
+            // TODO active text-gray-900
+            <li
+              key={link.label}
+              className="py-2 text-gray-500 hover:text-gray-700"
+            >
               <Link
-                href={`/${lang === "en" ? "" : lang}${link.href}`}
+                href={link.href}
                 aria-label={link.label}
                 title={link.label}
-                className="tracking-wide transition-colors duration-200 font-normal"
+                className="tracking-wide transition-colors duration-200 font-normal "
+                scroll={true}
               >
                 {link.label}
               </Link>
@@ -149,3 +158,4 @@ const Header = () => {
 };
 
 export default Header;
+

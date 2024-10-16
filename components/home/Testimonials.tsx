@@ -10,7 +10,7 @@ const Testimonials = ({ id, locale }: { id: string; locale: any }) => {
   return (
     <section
       id={id}
-      className="flex flex-col justify-center items-center pt-16 gap-12 max-w-[88%]"
+      className="flex flex-col justify-center items-center gap-12 max-w-[88%] py-24 sm:py-32 "
     >
       <div className="flex flex-col text-center max-w-xl gap-4">
         <h2 className="text-center text-white">

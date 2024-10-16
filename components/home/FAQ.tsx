@@ -24,7 +24,7 @@ const FAQ = ({
   return (
     <section
       id={id}
-      className="flex flex-col justify-center max-w-[88%] items-center py-16 gap-12"
+      className="flex flex-col justify-center max-w-[88%] items-center gap-12 py-24 sm:py-32 "
     >
       <div className="flex flex-col text-center gap-4">
         <h2 className="text-center text-white">

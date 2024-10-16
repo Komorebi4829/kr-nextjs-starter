@@ -6,7 +6,7 @@ import { SiBuymeacoffee, SiJuejin } from "react-icons/si";
 const OPEN_SOURCE_URL = "https://github.com/komorebi4829/kr-nextjs-starter";
 
 const baseSiteConfig = {
-  name: "Landing page boilerplate",
+  name: "Nextjs Landing Starter",
   description:
     "A free, open-source, and powerful landing page boilerplate, ideal for various projects, enabling you to create a landing page in under an hour.",
   url: "https://landingpage.kentriversnook.com",
