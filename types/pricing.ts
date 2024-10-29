@@ -7,9 +7,10 @@ export enum FrequencyEnum {
 
 export enum TiersEnum {
   Free = "free",
+  Standard = "standard",
   Pro = "pro",
   Team = "team",
-  Customize = "customize"
+  Customize = "customize",
 }
 
 export type Frequency = {
@@ -32,3 +33,4 @@ export type Tier = {
   buttonColor?: ButtonProps["color"];
   buttonVariant: ButtonProps["variant"];
 };
+

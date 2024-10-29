@@ -4,15 +4,11 @@ import Link from "next/link";
 
 const CTAButton = ({ locale }: { locale: any }) => {
   return (
-    <Link
-      href="https://github.com/komorebi4829/kr-nextjs-starter"
-      target="_blank"
-      rel="noopener noreferrer nofollow"
-    >
+    <Link href="#Features">
       <Button
         variant="default"
         className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white"
-        aria-label="Get Boilerplate"
+        aria-label="Get started"
       >
         <RocketIcon />
         {locale.title}

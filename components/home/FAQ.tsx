@@ -37,7 +37,7 @@ const FAQ = ({
       <Accordion
         fullWidth
         keepContentMounted
-        className="gap-3"
+        className="gap-3 mx-auto max-w-6xl"
         itemClasses={{
           base: "px-6 !bg-default-100 !shadow-none hover:!bg-default-200/50",
           title: "font-medium",
@@ -52,9 +52,14 @@ const FAQ = ({
         {FAQS?.map((item) => (
           <AccordionItem
             key={item.title}
-            indicator={<PlusIcon />}
             title={item.title}
-            HeadingComponent="h3"
+            indicator={({ isOpen }) => (
+              <PlusIcon
+                className={`w-6 h-6 transition-transform duration-300 ease-in-out ${
+                  isOpen ? "rotate-45" : ""
+                }`}
+              />
+            )}
           >
             {item.content}
           </AccordionItem>
@@ -65,3 +70,4 @@ const FAQ = ({
 };
 
 export default FAQ;
+

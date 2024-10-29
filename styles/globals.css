@@ -33,6 +33,10 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
+
+    --shimmer-color: 34, 34, 34;
+    --shimmer-bg: #222;
+    --shimmer-highlight: #fff;
   }
 
   .dark {
@@ -63,6 +67,10 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
+
+    --shimmer-color: 255, 255, 255;
+    --shimmer-bg: #222222;
+    --shimmer-highlight: #444444;
   }
 }
 
@@ -93,3 +101,4 @@ h5 {
 h6 {
   @apply text-base sm:text-xl text-slate-900 dark:text-gray-200 leading-[1.625] font-semibold mb-2;
 }
+
