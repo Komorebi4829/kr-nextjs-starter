@@ -2,7 +2,6 @@
 
 import { ALL_FEATURES } from "@/config/feature";
 import React from "react";
-import { RoughNotation } from "react-rough-notation";
 import { motion } from "framer-motion";
 
 const Feature = ({
@@ -36,11 +35,20 @@ const Feature = ({
       id={id}
       className="flex flex-col justify-center lg:max-w-7xl md:max-w-5xl w-[95%] mx-auto md:gap-14 py-24 sm:py-32"
     >
-      <h2 className="text-center text-white mb-16">
-        <RoughNotation type="highlight" show={true} color="#2563EB">
+      <motion.div 
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="text-center mb-16 relative"
+      >
+        <motion.h2 
+          className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 
+            font-bold relative z-10 inline-block"
+        >
           {locale.title}
-        </RoughNotation>
-      </h2>
+        </motion.h2>
+        <div className="absolute -inset-1 bg-blue-500/20 blur-2xl rounded-full opacity-75 z-0" />
+      </motion.div>
       <motion.div 
         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         variants={container}

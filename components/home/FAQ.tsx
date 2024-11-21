@@ -2,7 +2,7 @@
 import { ALL_FAQS } from "@/config/faqs";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import { PlusIcon } from "lucide-react";
-import { RoughNotation } from "react-rough-notation";
+import { motion } from "framer-motion";
 
 // update rough notation highlight
 function triggerResizeEvent() {
@@ -27,11 +27,17 @@ const FAQ = ({
       className="flex flex-col justify-center max-w-[88%] items-center gap-12 py-24 sm:py-32 "
     >
       <div className="flex flex-col text-center gap-4">
-        <h2 className="text-center text-white">
-          <RoughNotation type="highlight" show={true} color="#2563EB">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="relative"
+        >
+          <h2 className="text-center relative z-10 inline-block font-bold bg-gradient-to-br from-blue-500 to-blue-600 text-transparent bg-clip-text">
             {locale.title}
-          </RoughNotation>
-        </h2>
+          </h2>
+          <div className="absolute -inset-2 bg-blue-500/10 blur-xl rounded-2xl z-0" />
+        </motion.div>
         <p className="text-large text-default-500">{locale.description}</p>
       </div>
       <Accordion
@@ -70,4 +76,3 @@ const FAQ = ({
 };
 
 export default FAQ;
-

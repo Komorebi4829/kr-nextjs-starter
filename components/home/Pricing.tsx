@@ -14,7 +14,7 @@ import {
 import { siteConfig } from "@/config/site";
 import { ALL_TIERS } from "@/config/tiers";
 import { FaCheck } from "react-icons/fa";
-import { RoughNotation } from "react-rough-notation";
+import { motion } from "framer-motion";
 
 const Pricing = ({
   id,
@@ -32,11 +32,17 @@ const Pricing = ({
       className="flex flex-col justify-center max-w-4xl items-center py-24 sm:py-32 "
     >
       <div className="flex flex-col text-center max-w-xl">
-        <h2 className="text-center text-white">
-          <RoughNotation type="highlight" show={true} color="#2563EB">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="relative mb-4"
+        >
+          <h2 className="text-center relative z-10 inline-block font-bold bg-gradient-to-br from-blue-600 via-blue-500 to-blue-400 text-transparent bg-clip-text">
             {locale.title}
-          </RoughNotation>
-        </h2>
+          </h2>
+          <div className="absolute -inset-x-4 -inset-y-2 bg-blue-500/10 blur-xl rounded-lg z-0" />
+        </motion.div>
         <h3 className="text-4xl font-medium tracking-tight mt-2">
           {locale.title2}
         </h3>
@@ -107,4 +113,3 @@ const Pricing = ({
 };
 
 export default Pricing;
-
