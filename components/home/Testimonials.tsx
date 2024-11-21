@@ -6,7 +6,6 @@ import { siteConfig } from "@/config/site";
 import { TestimonialsData } from "@/config/testimonials";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
 
 const Testimonials = ({ id, locale }: { id: string; locale: any }) => {
   return (
@@ -15,18 +14,13 @@ const Testimonials = ({ id, locale }: { id: string; locale: any }) => {
       className="flex flex-col justify-center items-center gap-12 max-w-[88%] py-24 sm:py-32 "
     >
       <div className="flex flex-col text-center max-w-xl gap-4">
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          className="relative"
-        >
+        <div className="relative animate-scale-in">
           <h2 className="text-center relative z-10 inline-block font-bold bg-gradient-to-r from-blue-500 via-blue-400 to-blue-300 text-transparent bg-clip-text">
             {locale.title}
           </h2>
           <div className="absolute -inset-x-8 -inset-y-4 bg-gradient-to-r from-blue-500/20 via-blue-400/20 to-blue-300/20 blur-2xl rounded-full z-0 opacity-50" />
-        </motion.div>
-        <p className="text-large text-default-500">
+        </div>
+        <p className="text-large text-default-500 animate-fade-in [animation-delay:200ms]">
           {/* Don't take our word for it. Here's what they have to say. */}
           {locale.description1}{" "}
           <Link
