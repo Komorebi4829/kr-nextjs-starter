@@ -2,6 +2,7 @@
 import { ALL_FAQS } from "@/config/faqs";
 import { Accordion, AccordionItem } from "@nextui-org/react";
 import { PlusIcon } from "lucide-react";
+import { motion } from "framer-motion";
 
 // update rough notation highlight
 function triggerResizeEvent() {
@@ -23,18 +24,21 @@ const FAQ = ({
   return (
     <section
       id={id}
-      className="flex flex-col justify-center max-w-[88%] items-center gap-12 py-24 sm:py-32"
+      className="flex flex-col justify-center max-w-[88%] items-center gap-12 py-24 sm:py-32 "
     >
       <div className="flex flex-col text-center gap-4">
-        <div className="relative animate-slide-up">
-          <h2 className="text-4xl font-medium tracking-tight relative z-10 inline-block bg-gradient-to-br from-blue-600 via-blue-500 to-blue-400 text-transparent bg-clip-text">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+          className="relative"
+        >
+          <h2 className="text-center relative z-10 inline-block font-bold bg-gradient-to-br from-blue-500 to-blue-600 text-transparent bg-clip-text">
             {locale.title}
           </h2>
           <div className="absolute -inset-2 bg-blue-500/10 blur-xl rounded-2xl z-0" />
-        </div>
-        <p className="text-large animate-fade-in [animation-delay:200ms] max-w-2xl mx-auto">
-          {locale.description}
-        </p>
+        </motion.div>
+        <p className="text-large text-default-500">{locale.description}</p>
       </div>
       <Accordion
         fullWidth
@@ -42,9 +46,9 @@ const FAQ = ({
         className="gap-3 mx-auto max-w-6xl"
         itemClasses={{
           base: "px-6 !bg-default-100 !shadow-none hover:!bg-default-200/50",
-          title: "text-default-500",
-          trigger: "py-5",
-          content: "pt-0 pb-5 text-default-500",
+          title: "font-medium",
+          trigger: "py-6",
+          content: "pt-0 pb-6 text-base text-default-500",
         }}
         items={FAQS}
         selectionMode="multiple"

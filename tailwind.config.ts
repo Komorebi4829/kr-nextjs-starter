@@ -1,6 +1,8 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  darkMode: ["class"],
+import { nextui } from "@nextui-org/react";
+import type { Config } from "tailwindcss";
+
+const config = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{ts,tsx}",
     "./components/**/*.{ts,tsx}",
@@ -24,6 +26,10 @@ module.exports = {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        // primary: {
+        //   DEFAULT: "hsl(var(--primary))",
+        //   foreground: "hsl(var(--primary-foreground))",
+        // },
         primary: {
           foreground: "#FFFFFF",
           DEFAULT: "#3B82F6",
@@ -79,18 +85,6 @@ module.exports = {
           "0%": { backgroundPosition: "top left" },
           "100%": { backgroundPosition: "top right" },
         },
-        "fade-in": {
-          "0%": { opacity: "0", transform: "translateY(10px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
-        "scale-in": {
-          "0%": { opacity: "0", transform: "scale(0.95)" },
-          "100%": { opacity: "1", transform: "scale(1)" },
-        },
-        "slide-up": {
-          "0%": { opacity: "0", transform: "translateY(20px)" },
-          "100%": { opacity: "1", transform: "translateY(0)" },
-        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -99,11 +93,11 @@ module.exports = {
         "scrolling-banner-vertical":
           "scrolling-banner-vertical var(--duration) linear infinite",
         shimmer: "shimmer 2s infinite",
-        "fade-in": "fade-in 0.5s ease-out forwards",
-        "scale-in": "scale-in 0.5s ease-out forwards",
-        "slide-up": "slide-up 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards",
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("@nextui-org/react")],
-};
+  plugins: [require("tailwindcss-animate"), nextui()],
+} satisfies Config;
+
+export default config;
+
