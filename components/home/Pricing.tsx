@@ -13,8 +13,8 @@ import {
 
 import { siteConfig } from "@/config/site";
 import { ALL_TIERS } from "@/config/tiers";
-import { FaCheck } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { FaCheck } from "react-icons/fa";
 
 const Pricing = ({
   id,
@@ -38,7 +38,7 @@ const Pricing = ({
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="relative mb-4"
         >
-          <h2 className="text-center relative z-10 inline-block font-bold bg-gradient-to-br from-blue-600 via-blue-500 to-blue-400 text-transparent bg-clip-text">
+          <h2 className="text-center relative z-10 inline-block font-bold bg-gradient-to-br from-blue-600 via-blue-500 to-blue-400 text-transparent bg-clip-text pb-3">
             {locale.title}
           </h2>
           <div className="absolute -inset-x-4 -inset-y-2 bg-blue-500/10 blur-xl rounded-lg z-0" />
