@@ -1,18 +1,19 @@
 import { SiteConfig } from "@/types/siteConfig";
 import { BsGithub, BsTwitterX, BsWechat } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-import { SiBuymeacoffee, SiJuejin } from "react-icons/si";
+import { SiJuejin } from "react-icons/si";
 
 const OPEN_SOURCE_URL = "https://github.com/komorebi4829/kr-nextjs-starter";
 
 const baseSiteConfig = {
   name: "Nextjs Landing Starter",
   description:
-    "A free, open-source, and powerful landing page boilerplate, ideal for various projects, enabling you to create a landing page in under an hour.",
+    "A free, open-source, and powerful nextjs landing starter, ideal for various projects, enabling you to create a landing page in under an hour.",
   url: "https://landingpage.kentriversnook.com",
   ogImage: "https://landingpage.kentriversnook.com/og.png",
   metadataBase: "/",
   keywords: [
+    "Nextjs Landing Starter",
     "landing page boilerplate",
     "landing page template",
     "awesome landing page",
@@ -41,28 +42,28 @@ const baseSiteConfig = {
     { name: "repo", href: OPEN_SOURCE_URL, icon: BsGithub },
     {
       name: "twitter",
-      href: "https://twitter.com/weijunext",
+      href: "https://x.com/kentkomorebi",
       icon: BsTwitterX,
     },
-    {
-      name: "buyMeCoffee",
-      href: "https://www.buymeacoffee.com/weijunext",
-      icon: SiBuymeacoffee,
-    },
+    // {
+    //   name: "buyMeCoffee",
+    //   href: "https://www.buymeacoffee.com/weijunext",
+    //   icon: SiBuymeacoffee,
+    // },
   ],
   footerLinks: [
     { name: "email", href: "mailto:weijunext@gmail.com", icon: MdEmail },
     {
       name: "twitter",
-      href: "https://twitter.com/weijunext",
+      href: "https://x.com/kentkomorebi",
       icon: BsTwitterX,
     },
-    { name: "github", href: "https://github.com/weijunext/", icon: BsGithub },
-    {
-      name: "buyMeCoffee",
-      href: "https://www.buymeacoffee.com/weijunext",
-      icon: SiBuymeacoffee,
-    },
+    { name: "github", href: "https://github.com/komorebi4829/", icon: BsGithub },
+    // {
+    //   name: "buyMeCoffee",
+    //   href: "https://www.buymeacoffee.com/weijunext",
+    //   icon: SiBuymeacoffee,
+    // },
     {
       name: "juejin",
       href: "https://juejin.cn/user/26044008768029",
@@ -75,17 +76,17 @@ const baseSiteConfig = {
     },
   ],
   footerProducts: [
-    { url: "https://phcopilot.ai/", name: "Product Hunt Copilot" },
+    // { url: "https://phcopilot.ai/", name: "Product Hunt Copilot" },
+    // {
+    //   url: "https://landingpage.weijunext.com/",
+    //   name: "Landing Page Boilerplate",
+    // },
     {
-      url: "https://landingpage.weijunext.com/",
-      name: "Landing Page Boilerplate",
+      url: "https://showcase.kentriversnook.com/kr-nest-admin/",
+      name: "KR Next Admin",
     },
     { url: "https://nextjscn.org/", name: "Next.js 中文文档" },
     { url: "https://nextjs.weijunext.com/", name: "Next.js Practice" },
-    {
-      url: "https://github.com/weijunext/indie-hacker-tools",
-      name: "Indie Hacker Tools",
-    },
   ],
 };
 

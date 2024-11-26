@@ -8,7 +8,7 @@ export const TIERS_EN: Array<Tier> = [
     price: "Free",
     href: siteConfig.openSourceURL || "#",
     description:
-      "Freely clone the landing page boilerplate from the GitHub repository.",
+      "Freely clone the nextjs landing starter from the GitHub repository.",
     features: [
       "Free",
       "Access to full code",

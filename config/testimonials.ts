@@ -2,7 +2,7 @@ export const TestimonialsData = [
   {
     user: {
       name: "Founder",
-      username: "weijunext",
+      username: "Kent River",
       image: "/images/users/weijunext.jpeg",
     },
     content:

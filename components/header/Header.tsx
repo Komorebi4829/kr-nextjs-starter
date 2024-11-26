@@ -2,14 +2,13 @@
 import HeaderLinks from "@/components/header/HeaderLinks";
 import { LangSwitcher } from "@/components/header/LangSwitcher";
 import { siteConfig } from "@/config/site";
+import useSmoothScroll from "@/hooks/useSmoothScroll";
 import { MenuIcon } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { CgClose } from "react-icons/cg";
 import { ThemedButton } from "../ThemedButton";
-import useSmoothScroll from "@/hooks/useSmoothScroll";
 
 const links = [
   { label: "Features", href: "#Features" },
@@ -56,8 +55,8 @@ const Header = () => {
         <div className="flex items-center md:gap-x-12 flex-1">
           <Link
             href="/"
-            aria-label="Landing Page Boilerplate"
-            title="Landing Page Boilerplate"
+            aria-label="Nextjs Landing Starter"
+            title="Nextjs Landing Starter"
             className="flex items-center space-x-1 font-bold"
           >
             {/* <Image
@@ -134,8 +133,8 @@ const Header = () => {
                   <div>
                     <Link
                       href="/"
-                      aria-label="Landing Page Boilerplate"
-                      title="Landing Page Boilerplate"
+                      aria-label="Nextjs Landing Starter"
+                      title="Nextjs Landing Starter"
                       className="inline-flex items-center"
                     >
                       <span className="text-xl font-bold tracking-wide text-gray-800 dark:text-gray-200">
