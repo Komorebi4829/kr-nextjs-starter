@@ -14,14 +14,14 @@ export const showcases = [
     // title: 'Landing Page Boilerplate',
     // description: 'A free, open-source, and powerful landing page boilerplate, ideal for various projects, enabling you to create a landing page in under an hour.',
     // url: "https://landingpage.kentriversnook.com",
-    url: "https://landingpage.weijunext.com",
+    url: "https://kr-nextjs-starter.vercel.app/",
     // logo: '',
     // og: 'https://landingpage.kentriversnook.com/og.png'
   },
-  {
-    url: "https://PHCopilot.ai/",
-  },
-  {
-    url: "https://regeai.com/",
-  },
+  // {
+  //   url: "https://PHCopilot.ai/",
+  // },
+  // {
+  //   url: "https://regeai.com/",
+  // },
 ].concat(ENV_SHOWCASE_LIST);

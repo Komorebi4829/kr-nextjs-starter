@@ -1,7 +1,6 @@
 import { SiteConfig } from "@/types/siteConfig";
-import { BsGithub, BsTwitterX, BsWechat } from "react-icons/bs";
+import { BsGithub, BsTwitterX } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
-import { SiJuejin } from "react-icons/si";
 
 const OPEN_SOURCE_URL = "https://github.com/komorebi4829/kr-nextjs-starter";
 
@@ -9,8 +8,8 @@ const baseSiteConfig = {
   name: "Nextjs Landing Starter",
   description:
     "A free, open-source, and powerful nextjs landing starter, ideal for various projects, enabling you to create a landing page in under an hour.",
-  url: "https://landingpage.kentriversnook.com",
-  ogImage: "https://landingpage.kentriversnook.com/og.png",
+  url: "https://kr-nextjs-starter.vercel.app/",
+  ogImage: "https://kr-nextjs-starter.vercel.app/og.png",
   metadataBase: "/",
   keywords: [
     "Nextjs Landing Starter",
@@ -22,8 +21,8 @@ const baseSiteConfig = {
   authors: [
     {
       name: "Kent River",
-      url: "https://landingpage.kentriversnook.com",
-      twitter: "https://twitter.com/weijunext",
+      url: "https://kr-nextjs-starter.vercel.app/",
+      twitter: "https://twitter.com/kentkomorebi",
     },
   ],
   creator: "@Kent",
@@ -52,7 +51,7 @@ const baseSiteConfig = {
     // },
   ],
   footerLinks: [
-    { name: "email", href: "mailto:weijunext@gmail.com", icon: MdEmail },
+    { name: "email", href: "mailto:kentriver4829@gmail.com", icon: MdEmail },
     {
       name: "twitter",
       href: "https://x.com/kentkomorebi",
@@ -64,16 +63,16 @@ const baseSiteConfig = {
     //   href: "https://www.buymeacoffee.com/weijunext",
     //   icon: SiBuymeacoffee,
     // },
-    {
-      name: "juejin",
-      href: "https://juejin.cn/user/26044008768029",
-      icon: SiJuejin,
-    },
-    {
-      name: "weChat",
-      href: "https://weijunext.com/make-a-friend",
-      icon: BsWechat,
-    },
+    // {
+    //   name: "juejin",
+    //   href: "https://juejin.cn/user/26044008768029",
+    //   icon: SiJuejin,
+    // },
+    // {
+    //   name: "weChat",
+    //   href: "https://weijunext.com/make-a-friend",
+    //   icon: BsWechat,
+    // },
   ],
   footerProducts: [
     // { url: "https://phcopilot.ai/", name: "Product Hunt Copilot" },

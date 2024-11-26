@@ -26,7 +26,7 @@ const defaultOptions: Required<ScraperOptions> = {
   timeout: 10000,
   maxRedirects: 5,
   headers: {
-    'User-Agent': 'ModernMetaScraper/1.0 (+https://landingpage.weijunext.com/; weijunext@gmail.com)'
+    'User-Agent': 'ModernMetaScraper/1.0 (+https://kr-nextjs-starter.vercel.app/; kentriver4829@gmail.com)'
   },
 };
 
