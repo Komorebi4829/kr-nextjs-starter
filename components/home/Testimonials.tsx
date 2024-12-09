@@ -14,7 +14,7 @@ const Testimonials = ({ id, locale }: { id: string; locale: any }) => {
       id={id}
       className="flex flex-col justify-center items-center gap-8 md:gap-12 w-[95%] md:max-w-[88%] lg:max-w-[80%] xl:max-w-[72%] py-16 sm:py-20 md:py-24 sm:py-32"
     >
-      <div className="flex flex-col text-center max-w-xl gap-3 md:gap-4">
+      <div className="flex flex-col text-center w-full gap-3 md:gap-4">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -26,7 +26,7 @@ const Testimonials = ({ id, locale }: { id: string; locale: any }) => {
           </h2>
           <div className="absolute -inset-x-4 -inset-y-2 bg-gradient-to-r from-blue-500/20 via-blue-400/20 to-blue-300/20 blur-2xl rounded-full z-0 opacity-50" />
         </motion.div>
-        <p className="text-large text-default-500">
+        <p className="text-large text-default-500 max-w-xl mx-auto">
           {/* Don't take our word for it. Here's what they have to say. */}
           {locale.description1}{" "}
           <Link

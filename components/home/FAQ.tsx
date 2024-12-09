@@ -1,8 +1,8 @@
 "use client";
 import { ALL_FAQS } from "@/config/faqs";
 import { Accordion, AccordionItem } from "@nextui-org/react";
-import { PlusIcon } from "lucide-react";
 import { motion } from "framer-motion";
+import { PlusIcon } from "lucide-react";
 
 // update rough notation highlight
 function triggerResizeEvent() {
@@ -26,7 +26,7 @@ const FAQ = ({
       id={id}
       className="flex flex-col justify-center max-w-[88%] items-center gap-12 py-24 sm:py-32 "
     >
-      <div className="flex flex-col text-center gap-4">
+      <div className="flex flex-col text-center gap-4 w-full">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -76,3 +76,4 @@ const FAQ = ({
 };
 
 export default FAQ;
+

@@ -29,9 +29,9 @@ const Pricing = ({
   return (
     <section
       id={id}
-      className="flex flex-col justify-center max-w-4xl items-center py-24 sm:py-32 "
+      className="flex flex-col justify-center max-w-4xl items-center py-24 sm:py-32"
     >
-      <div className="flex flex-col text-center max-w-xl">
+      <div className="flex flex-col text-center w-full">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -113,3 +113,4 @@ const Pricing = ({
 };
 
 export default Pricing;
+
